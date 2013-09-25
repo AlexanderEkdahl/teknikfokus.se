@@ -1,0 +1,76 @@
+<% content_for :header do %>
+  <div class="countdown">
+    <% %w{months days hours minutes seconds}.each do |x| %>
+      <div>
+        <time id="<%= x %>">&#160;</time>
+        <%= t(x) %>
+      </div>
+    <% end %>
+  </div>
+<% end %>
+
+<section>
+  <h1>Välkommen!</h1>
+
+  <hr>
+
+  <p>Teknikfokus är en arbetsmarknadsmässa som arrangeras av Datateknik- och E-sektionen vid LTH. Den utspelar sig i E/D-husets foajé den 20:e februari 2013 och mässans målgrupp är studenter som läser Datateknik, InfoCom eller Elektroteknik.</p>
+</section>
+
+<!-- <section>
+  <h1>Företag</h1>
+
+  <hr>
+
+  <% companies.each do |company| %>
+    <%= link_to company.name, "http://#{company.url}" %>
+  <% end %>
+</section> -->
+
+<section>
+  <h1>Vem, var, hur?</h1>
+
+  <hr>
+
+  <p>Teknikfokus utspelar sig i E-husets foajé kl. 10:00-16:00 den 20:e februari 2013.</p>
+
+  <p>På mässan får studenter tillfälle att möta företagsrepresentanter och lyssna på inspirationsföreläsningar. Kvällen kommer sedan avslutas med ett mingel för de studenter som varit delaktiga i Teknikfokus, företagsrepresentanter, samt de studenter som fått en biljett tilldelad av ett företag.</p>
+
+  <iframe width='100%' height='300' frameBorder='0' src='http://a.tiles.mapbox.com/v3/alexanderekdahl.map-5bi2mumc.html#13/55.70651425455931/13.19706916809082'></iframe>
+</section>
+
+<section>
+  <h1>Teknikfokus Startup</h1>
+
+  <hr>
+
+  <p>Den 10-11:e februari slår vi upp dörrarna för Teknikfokus Startup, E-husets egna startup-mässa. Här kommer några av Sveriges senaste startup-företag att visa sig och spännande individer hålla lunch-föreläsningar.</p>
+
+  <p>Entreprenörsandan förgylls även av VentureLab, FENA och Startup Live; organisationer som existerar för att stötta och peppa människor med att starta egna företag. Missa heller inte chansen att låta ditt CV bli granskat inför Teknikfokus, hos karriärspecialisten från LTHs näringslivscenter.</p>
+</section>
+
+<section>
+  <h1>Jobba som funktionär</h1>
+
+  <hr>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat.</p>
+
+  <%= link_to("Gå till anmälan", new_official_path, class: 'button') %>
+</section>
+
+<section>
+  <h1>Kontakta oss</h1>
+
+  <hr>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</section>

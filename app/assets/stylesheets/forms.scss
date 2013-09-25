@@ -1,0 +1,83 @@
+.button {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  cursor: pointer;
+  background-color: $main_color !important;
+  color: white;
+  padding: 0.3em 0.45em;
+  font-size: 0.9em;
+  border-radius: 2px;
+  border: none;
+  box-shadow: 0 2px 2px -2px #000;
+  display: block;
+  width: 200px;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.form {
+  .input-label {
+    font-size: 0.9em;
+    display: block;
+    margin-top: 25px;
+  }
+
+  #{$all-text-inputs} {
+    @include appearance(none);
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    padding: em(4, 24);
+    font-size: 1.2em;
+    font-family: inherit;
+    display: block;
+  }
+
+  input[type="submit"] {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    cursor: pointer;
+    background-color: $main_color !important;
+    color: white;
+    padding: 0.3em 0.45em;
+    font-size: 0.9em;
+    border-radius: 2px;
+    border: none;
+    box-shadow: 0 2px 2px -2px #000;
+    display: block;
+    width: 200px;
+    font-size: 1.2em;
+  }
+
+  input[type='checkbox'] {
+    margin-right: 10px;
+  }
+
+  .suffix {
+    font-size: 0.8em;
+  }
+
+  .role-help {
+    display: block;
+    font-size: 0.8em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .error {
+    border-color: red;
+    box-shadow: 0px 0px 3px rgba(255, 0, 0, 0.6);
+  }
+
+  .error + .suffix {
+    color: red;
+  }
+}

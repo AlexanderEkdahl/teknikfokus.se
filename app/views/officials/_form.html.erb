@@ -1,0 +1,22 @@
+<%= official_form_for(@official) do |f| %>
+  <% if @official.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@official.errors.count, "error") %> prohibited this official from being saved:</h2>
+
+      <ul>
+      <% @official.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <% Official::PROPERTIES_KEYS.each do |key| %>
+    <%= f.text_field key %>
+  <% end %>
+
+  <p>Vad skulle du kunna tänka dig att hjälpa till med?</p>
+
+  <%= f.role_check_boxes %>
+
+  <%= f.submit %>
+<% end %>
