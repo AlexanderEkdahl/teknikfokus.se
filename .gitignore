@@ -14,6 +14,5 @@
 # Ignore all logfiles and tempfiles.
 /log
 /tmp
-/bin
 
 .DS_Store
