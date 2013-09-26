@@ -2,6 +2,8 @@ $main_color: #87CEEB;
 
 @import "normalize";
 @import "bourbon";
+@import "core";
+@import "countdown";
 
 @import "forms";
 
@@ -35,30 +37,8 @@ header {
 section {
   max-width: 800px;
   margin: auto;
-}
-
-.countdown {
-  margin-top: 40px;
-  text-align: center;
-
-  div {
-    display: inline-block;
-    margin: 10px;
-    background-color: #87CEEB;
-    padding: 10px;
-    font-size: 14px;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1;
-    height: 100px;
-    width: 100px;
-
-    time {
-      display: block;
-      font-size: 75px;
-    }
-  }
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 h1 {
