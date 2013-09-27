@@ -4,18 +4,14 @@ $main_color: #87CEEB;
 @import "bourbon";
 @import "core";
 @import "countdown";
-
 @import "forms";
 
-body, html {
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #333;
   padding: 0;
   margin: 0;
-}
-
-body {
-   font-family: 'Lato', sans-serif;
-   font-weight: 300;
-   color: #333;
 }
 
 p {
