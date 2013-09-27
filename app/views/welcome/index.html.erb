@@ -1,5 +1,5 @@
 <% content_for :header do %>
-  <div class="countdown">
+  <div class="countdown" id="countdown" data-target="<%= Settings.date.to_s %>">
     <% %w{months days hours minutes seconds}.each do |x| %>
       <div>
         <time id="<%= x %>">&#160;</time>

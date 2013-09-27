@@ -6,6 +6,7 @@ gem 'pg'
 gem 'sass-rails'
 gem 'bourbon'
 gem 'jquery-rails'
+gem 'rails_config'
 
 group :development, :test do
   gem 'debugger'
