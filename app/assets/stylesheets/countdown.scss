@@ -9,19 +9,20 @@
   div {
     display: inline-block;
     margin: 10px;
-    background-color: #87CEEB;
+    background-color: $main_color;
     padding: 10px;
     font-size: 14px;
     color: white;
     text-transform: uppercase;
     text-align: center;
-    line-height: 1;
+    line-height: 1.2;
     height: 100px;
     width: 100px;
 
     time {
       display: block;
-      font-size: 75px;
+      font-size: 62px;
+      font-family: BanqueGothique;
     }
   }
 }

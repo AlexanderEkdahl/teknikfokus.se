@@ -9,16 +9,21 @@
   color: white;
   padding: 0.3em 0.45em;
   font-size: 0.9em;
-  border-radius: 2px;
   border: none;
   box-shadow: 0 2px 2px -2px #000;
   display: block;
   width: 200px;
   font-size: 1.2em;
   text-decoration: none;
+
+  &:hover {
+    background-color: lighten($main_color, 10%) !important;
+  }
 }
 
 .form {
+  text-align: left;
+
   .input-label {
     font-size: 0.9em;
     display: block;
@@ -39,22 +44,7 @@
   }
 
   input[type="submit"] {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    cursor: pointer;
-    background-color: $main_color !important;
-    color: white;
-    padding: 0.3em 0.45em;
-    font-size: 0.9em;
-    border-radius: 2px;
-    border: none;
-    box-shadow: 0 2px 2px -2px #000;
-    display: block;
-    width: 200px;
-    font-size: 1.2em;
+    @extend .button;
   }
 
   input[type='checkbox'] {

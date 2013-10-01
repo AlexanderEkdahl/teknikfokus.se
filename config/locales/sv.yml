@@ -6,17 +6,6 @@ sv:
         email: E-mail
         size: Tröjstorlek
         food: Matpreferenser
-  support:
-    array:
-      last_word_connector: ' och '
-      two_words_connector: ' och '
-      words_connector: ', '
-  helpers:
-    submit:
-      official:
-        create: Skicka anmälan
-      create: Skapa
-      update: Spara
   date:
     abbr_day_names:
     - sön
@@ -149,6 +138,8 @@ sv:
       create: Skapa %{model}
       submit: Spara %{model}
       update: Ändra %{model}
+      official:
+        create: Skicka anmälan
   number:
     currency:
       format:
@@ -208,10 +199,3 @@ sv:
       long: ! '%e %B %Y %H:%M'
       short: ! '%e %b %H:%M'
     pm: ''
-  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-  activemodel:
-    errors:
-      <<: *errors
-  activerecord:
-    errors:
-      <<: *errors
