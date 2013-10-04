@@ -22,7 +22,7 @@ class OfficialForm < ActionView::Helpers::FormBuilder
   end
 
   def role_check_boxes
-    collection_check_boxes(:role_id, Role.all, :id, :name) do |role|
+    collection_check_boxes(:role_ids, Role.all, :id, :name) do |role|
       role.check_box + role.label + content_tag(:span, role.object.body, class: 'role-help')
     end
   end

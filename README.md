@@ -12,6 +12,7 @@
 * Rotating quotes "Vill ha sommarjobb"
 * Tona ut strecken
 * Kontaktuppgifeter måste skrivas
+* Size selector
 
 "Efter Teknikfokus 2013 frågade vi, "Vad vill du ha utav Teknikofus?"" Här är svaren:
 
@@ -20,8 +21,6 @@ yml event
   map
   location
   date when site should be enabled
-
-should be a yml file
 
 ##Att göra som funktionärsansvarig
 
