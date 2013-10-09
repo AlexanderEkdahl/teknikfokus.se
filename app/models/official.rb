@@ -5,6 +5,6 @@ class Official < ActiveRecord::Base
   SIZES = %w{XS S M L XL}
 
   validates :name, presence: true, length: { minimum: 3, maximum: 100 }
-  validates :email, format: { with: /@/ }
+  # validates :email, format: { with: /@/ }
   validates :size, presence: true, inclusion: SIZES
 end
