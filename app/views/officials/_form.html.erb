@@ -1,7 +1,7 @@
 <%= official_form_for(@official) do |f| %>
   <% if @official.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@official.errors.count, "error") %> prohibited this official from being saved:</h2>
+      <h3><%= pluralize(@official.errors.count, "error") %> prohibited this official from being saved:</h3>
 
       <ul>
       <% @official.errors.full_messages.each do |msg| %>
@@ -14,6 +14,9 @@
   <% Official::PROPERTIES_KEYS.each do |key| %>
     <%= f.text_field key %>
   <% end %>
+
+  <%= f.label(:size, class: 'input-label') %>
+  <%= select(:official, :size, Official::SIZES) %>
 
   <p>Vad skulle du kunna tänka dig att hjälpa till med?</p>
 

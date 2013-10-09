@@ -5,14 +5,10 @@
 * E and D logo
 * Thank you site when inactive
 * Make sqlite compatible?
-* Remove coffeescript and turbolinks
 * Only show days remaining
 * Sticky navigation underneath countdown'
 * Informatations sida för företagen
 * Rotating quotes "Vill ha sommarjobb"
-* Tona ut strecken
-* Kontaktuppgifeter måste skrivas
-* Size selector
 
 "Efter Teknikfokus 2013 frågade vi, "Vad vill du ha utav Teknikofus?"" Här är svaren:
 
@@ -33,3 +29,10 @@ yml event
 
 * Paddor a lá Apple Store
 * Företagskataloger
+
+##To import Heroku data to local database
+
+heroku pgbackups:capture
+curl -o latest.dump `heroku pgbackups:url`
+pg_restore --verbose --clean --no-acl --no-owner -h localhost -U alexanderekdahl -d teknikfokus_development latest.dump
+rm latest.dump

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131004175006) do
+ActiveRecord::Schema.define(version: 20131009104321) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20131004175006) do
 
   create_table "officials", force: true do |t|
     t.hstore "properties"
+    t.string "size"
   end
 
   create_table "officials_roles", id: false, force: true do |t|
