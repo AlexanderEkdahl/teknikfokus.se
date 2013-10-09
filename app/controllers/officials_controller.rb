@@ -16,6 +16,6 @@ class OfficialsController < ApplicationController
   private
 
     def official_params
-      params.require(:official).permit(:size, *Official::PROPERTIES_KEYS, role_ids: [])
+      params.require(:official).permit(:size, :name, :email, role_ids: [])
     end
 end

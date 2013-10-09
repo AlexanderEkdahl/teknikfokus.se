@@ -1,4 +1,4 @@
-class MoveOfficialSizePreferenceToColumn < ActiveRecord::Migration
+  class AddSizeToOfficial < ActiveRecord::Migration
   def change
     add_column :officials, :size, :string
 
