@@ -5,7 +5,7 @@
 * E and D logo
 * Thank you site when inactive
 * Only show days remaining
-* Sticky navigation underneath countdown'
+* Sticky navigation underneath header
 * Informatations sida för företagen
 * Rotating quotes "Vill ha sommarjobb"
 

@@ -4,6 +4,82 @@
   }
 }
 
+@font-face {
+  font-family: BanqueGothique;
+  src: local('BankGothic Md BT'), image-url('bankgthd.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Raleway Light'), local('Raleway-Light'), image-url('raleway.woff') format('woff');
+}
+
+body {
+  font-family: $font_body;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
 a {
   color: black;
+}
+
+p {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+header {
+  background-color: black;
+  text-align: center;
+  padding: 25px;
+
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+section {
+  max-width: 800px;
+  margin: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+h1 {
+  font-family: $font_heading;
+  font-size: 52px;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 1.2em;
+
+  @include mobile {
+    font-size: 36px;
+  }
+}
+
+h2 {
+  font-family: $font_heading;
+  font-size: 32px;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0 1px black;
+  margin-bottom: 0;
+
+  @include mobile {
+    font-size: 24px;
+  }
+}
+
+hr {
+  border: none;
+  border-top: 4px solid $main_color;
+  width: 200px;
 }

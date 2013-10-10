@@ -1,7 +1,7 @@
 class OfficialForm < ActionView::Helpers::FormBuilder
   FORM_HELPERS = %w{text_field password_field text_area file_field
                     number_field email_field telephone_field phone_field url_field
-                    select collection_select date_select time_select datetime_select}
+                    collection_select date_select time_select datetime_select}
 
   delegate :content_tag, to: :@template
 
@@ -17,8 +17,16 @@ class OfficialForm < ActionView::Helpers::FormBuilder
         suffix = I18n.t("#{name}_help", default: '')
       end
 
-      label(name, class: 'input-label') + super(name, options) + content_tag(:span, suffix, class: 'suffix')
+      label(name) + super(name, options) + content_tag(:span, suffix, class: 'suffix')
     end
+  end
+
+  def size_select
+    label(:size) + select(:size, Official::SIZES)
+  end
+
+  def label(name)
+    super(name, class: 'input-label')
   end
 
   def role_check_boxes

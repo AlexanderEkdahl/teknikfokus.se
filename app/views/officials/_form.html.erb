@@ -1,21 +1,7 @@
 <%= official_form_for(@official) do |f| %>
-  <% if @official.errors.any? %>
-    <div>
-      <h3><%= pluralize(@official.errors.count, "error") %> prohibited this official from being saved:</h3>
-
-      <ul>
-        <% @official.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
   <%= f.text_field :name %>
   <%= f.text_field :email %>
-
-  <%= f.label(:size, class: 'input-label') %>
-  <%= select(:official, :size, Official::SIZES) %>
+  <%= f.size_select %>
 
   <p>Vad skulle du kunna tänka dig att hjälpa till med?</p>
 

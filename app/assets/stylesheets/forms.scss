@@ -42,6 +42,13 @@
     font-size: 1.2em;
     font-family: inherit;
     display: block;
+
+    @include mobile {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+    }
   }
 
   input[type="submit"] {
