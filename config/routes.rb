@@ -4,4 +4,6 @@ Teknikfokus::Application.routes.draw do
   resources :officials do
     get 'thank_you', on: :collection
   end
+
+  get '/funktionär', to: redirect('/officials/new')
 end
