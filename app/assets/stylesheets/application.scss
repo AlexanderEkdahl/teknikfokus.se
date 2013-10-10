@@ -13,6 +13,13 @@ $font_family: BanqueGothique, sans-serif;
   font-weight: 400;
 }
 
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Raleway Light'), local('Raleway-Light'), image-url('raleway.woff') format('woff');
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   color: #333;
