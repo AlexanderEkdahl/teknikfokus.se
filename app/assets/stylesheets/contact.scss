@@ -9,4 +9,8 @@
   th {
     font-size: 1.2em;
   }
+
+  @include mobile {
+    font-size: 0.9em;
+  }
 }
