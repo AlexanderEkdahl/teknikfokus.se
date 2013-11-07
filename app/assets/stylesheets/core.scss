@@ -10,19 +10,13 @@
   font-weight: 400;
 }
 
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Raleway Light'), local('Raleway-Light'), image-url('raleway.woff') format('woff');
-}
-
 body {
   font-family: $font_body;
   color: #333;
   padding: 0;
   margin: 0;
   text-align: center;
+  font-weight: 300;
 }
 
 a {
