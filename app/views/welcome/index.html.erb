@@ -6,15 +6,19 @@
   <p>Teknikfokus är en arbetsmarknadsmässa som arrangeras av Datateknik- och E-sektionen vid LTH. Mässans målgrupp är studenter som läser Datateknik, InfoCom, Medicinteknik eller Elektroteknik. Teknikfokus är ett fantastiskt tillfälle för studenter och företag inom ovan nämnda områden att träffas och få bra kontakt med varandra</p>
 </section>
 
-<!-- <section>
+<section class="companies">
   <h1>Företag</h1>
 
   <hr>
 
-  <% companies.each do |company| %>
-    <%= link_to company.name, "http://#{company.url}" %>
+  <% companies.shuffle.each do |company| %>
+    <%= link_to company.url do %>
+      <%= image_tag company.logo %>
+    <% end %>
   <% end %>
-</section> -->
+</section>
+
+<p>Fler företag kommer läggas upp här inom kort.</p>
 
 <section>
   <h1>Vem, var, hur?</h1>
