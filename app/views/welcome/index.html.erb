@@ -5,13 +5,17 @@
 
   <hr>
 
-  <p>Teknikfokus är en arbetsmarknadsmässa som arrangeras av Datateknik- och E-sektionen vid LTH. Mässans målgrupp är studenter som läser Datateknik, InfoCom, Medicinteknik eller Elektroteknik. Teknikfokus är ett fantastiskt tillfälle för studenter och företag inom ovan nämnda områden att träffas och få bra kontakt med varandra</p>
+  <!-- <p>Teknikfokus är en arbetsmarknadsmässa som arrangeras av Datateknik- och E-sektionen vid LTH. Mässans målgrupp är studenter som läser Datateknik, InfoCom, Medicinteknik eller Elektroteknik. Teknikfokus är ett fantastiskt tillfälle för studenter och företag inom ovan nämnda områden att träffas och få bra kontakt med varandra</p> -->
+
+  <p>Teknikfokus är en arbetsmarknadsmässa som arrangeras av Datateknik- och E-sektionen vid LTH.</p>
 </section>
 
 <section class="companies">
-  <h1>Företag</h1>
+  <h1>Företag 2014</h1>
 
   <hr>
+
+  <p>Stort tack till alla företag som ställde ut på mässan!</p>
 
   <% companies.shuffle.each do |company| %>
     <%= link_to company.url do %>
@@ -20,7 +24,7 @@
   <% end %>
 </section>
 
-<section>
+<!-- <section>
   <h1>Vem, var, hur?</h1>
 
   <hr>
@@ -30,7 +34,7 @@
   <p>På mässan får studenter tillfälle att möta företagsrepresentanter i företagets montrar men även lyssna på inspirationsföreläsningar. Kvällen kommer sedan avslutas med ett mingel för de studenter som varit delaktiga i Teknikfokus, företagsrepresentanter, samt de studenter som fått en biljett tilldelad av ett företag. Minglet är en ypperlig chans att knyta ännu starkare kontakter mellan företag och studenter. Så ta chansen och nätverka med varandra!</p>
 
   <iframe width='100%' height='300' frameBorder='0' src='http://a.tiles.mapbox.com/v3/alexanderekdahl.map-5bi2mumc.html#13/55.70651425455931/13.19706916809082'></iframe>
-</section>
+</section> -->
 
 <!-- <section>
   <h1>Teknikfokus Startup</h1>
@@ -65,7 +69,7 @@
 
   <p>Har du frågor eller vill ha mer information tveka inte att skicka ett mail till oss på <%= mail_to("info@teknikfokus.se") %></p>
 
-  <p>Eller direkt till någon av projektledarna:</p>
+<!--   <p>Eller direkt till någon av projektledarna:</p>
 
   <table class="contact">
     <tr>
@@ -80,5 +84,5 @@
       <td><%= mail_to("erik@teknikfokus.se") %></td>
       <td><%= mail_to("hanna@teknikfokus.se") %></td>
     </tr>
-  </table>
+  </table> -->
 </section>
